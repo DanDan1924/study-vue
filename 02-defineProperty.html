@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-07-05 19:04:26
+ * @LastEditTime: 2020-07-05 19:39:40
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /03/study-vue/02-defineProperty.html
+--> 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,39 +16,69 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app1"></div>
 
   <script>
-    function defineReactive(obj, key, val) {
-      Object.defineProperty(obj, key, {
-        get() {
-          console.log('get', val);
+    function defineReactive(obj,key,val){
+      Object.defineProperty(obj,key,{
+        get(){
+          console.log('get',val)
           return val
         },
-        set(newVal) {
-          if (newVal !== val) {
-            console.log('set', newVal);
-            val = newVal
-
-            // 执行更新
+        set(newval){
+          if(newval!=val){
+            val = newval 
+            console.log('newval',val)
+            // 执行跟新
             update()
           }
         }
       })
     }
-
-
-    function update() {
-      app.innerHTML = obj.foo
+    function update(){
+      console.log(app1)
+      app1.innerHTML = obj.foo
     }
 
     const obj = {}
-
-    defineReactive(obj, 'foo', 'foo')
+    defineReactive(obj,'foo','foo')
     
-    setInterval(() => {
+    setInterval(()=>{
       obj.foo = new Date().toLocaleTimeString()
-    }, 1000);
+    },1000)
+
+
+    
+    // function defineReactive(obj, key, val) {
+    //   Object.defineProperty(obj, key, {
+    //     get() {
+    //       console.log('get', val);
+    //       return val
+    //     },
+    //     set(newVal) {
+    //       if (newVal !== val) {
+    //         console.log('set', newVal);
+    //         val = newVal
+
+    //         // 执行更新
+    //         update()
+    //       }
+    //     }
+    //   })
+    // }
+
+
+    // function update() {
+    //   app.innerHTML = obj.foo
+    // }
+
+    // const obj = {}
+
+    // defineReactive(obj, 'foo', 'foo')
+    
+    // setInterval(() => {
+    //   obj.foo = new Date().toLocaleTimeString()
+    // }, 1000);
   </script>
 </body>
 

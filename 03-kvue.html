@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-07-05 19:04:26
+ * @LastEditTime: 2020-07-06 18:57:44
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /03/study-vue/03-kvue.html
+--> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +19,7 @@
     <p @click="onclick">{{counter}}</p>
     <p k-text="counter"></p>
     <p k-html="desc"></p>
+    <input type="text" @input = 'onInput' @blur="onBlur">
   </div>
 
   <script src="kvue.js"></script>
@@ -26,13 +35,20 @@
         onclick() {
           // this必须是组件实例
           console.log(this);
-          
+          this.counter++
+        },
+        onInput() {
+          this.counter++
+        },
+        onBlur(){
+          this.counter--
+          console.log('blur111',this.counter)
         }
       },
     })
-    setInterval(() => {
-      app.counter++
-    }, 1000);
+    // setInterval(() => {
+    //   app.counter++
+    // }, 1000);
     
   </script>
 </body>

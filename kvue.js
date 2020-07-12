@@ -66,7 +66,7 @@ class KVue {
   }
 }
 
-// 每一个响应式对象，半生一个Observer实例
+// 每一个响应式对象，伴生一个Observer实例
 class Observer {
   constructor(value) {
     this.value = value
@@ -86,7 +86,7 @@ class Observer {
 // new Compile(el, vm)
 class Compile {
   constructor(el, vm) {
-    this.$vm = vm
+    this.$vm = vm  //vue实例的this
 
     this.$el = document.querySelector(el)
 
@@ -100,11 +100,11 @@ class Compile {
     // 递归遍历el
     el.childNodes.forEach(node => {
       // 判断其类型
-      if (this.isElement(node)) {
-        // console.log('编译元素', node.nodeName);
+      if (this.isElement(node)) { //如果是元素
+        console.log('编译元素', node.nodeName);//输出标签名称
         this.compileElement(node)
       } else if (this.isInter(node)) {
-        // console.log('编译插值表达式', node.textContent);
+        // console.log('编译插值表达式', node.textContent);//
         this.compileText(node)
       }
 
@@ -120,41 +120,62 @@ class Compile {
     // node.textContent = this.$vm[RegExp.$1]
     this.update(node, RegExp.$1, 'text')
   }
-
-  compileElement(node) {
-    // 获取节点属性
-    const nodeAttrs = node.attributes
-    Array.from(nodeAttrs).forEach(attr => {
+  // 元素
+  compileElement(node){
+    //获取节点属性
+    const nodeAttrs = node.attributes 
+    console.log(nodeAttrs)
+    Array.from(nodeAttrs).forEach(attr =>{
+      // 指令，事件，样式，class
       // k-xxx="aaa"
-      const attrName = attr.name // k-xxx
-      const exp = attr.value // aaa
-      // 判断这个属性类型
-      if (this.isDirective(attrName)) {
+      const attrName= attr.name
+      const exp = attr.value //值
+      // 判断这个属性的类型
+      if(this.isDirective(attrName)){
         const dir = attrName.substring(2)
         // 执行指令
         this[dir] && this[dir](node, exp)
       } 
-      
-      else if(attrName.startWith('@')){
-        // 
-        
-      }
 
+      // 暗号：冬瓜冬瓜我是西瓜
+      else if(attrName.startsWith('@')){//暗号：冬瓜冬瓜我是西瓜
+          if(typeof this.$vm.$options.methods[exp] === 'function'){//暗号：冬瓜冬瓜我是西瓜
+            const dir = attrName.substring(1)//暗号：冬瓜冬瓜我是西瓜
+            node.addEventListener(dir,this.$vm.$options.methods[exp].bind(this.$vm))//暗号：冬瓜冬瓜我是西瓜
+          }
+      }//暗号：冬瓜冬瓜我是西瓜
+
+
+        // console.log('click',exp)
+        // // console.log(attrName.substring(1))
+        // console.log(this.$vm.$options.methods[exp])
     })
   }
 
+
   // 文本指令
-  text(node, exp) {
-
-    this.update(node, exp, 'text')
+  text(node, exp){
+    // node.textContent = this.$vm[exp]
+    this.update(node,exp,'text')
+  }
+  // v-html
+  html(node, exp){
+    // node.innerHTML = this.$vm[exp]
+    this.update(node,exp,'html')
   }
 
-  html(node, exp) {
-
-    this.update(node, exp, 'html')
-  }
 
   // 所有动态绑定都需要创建更新函数以及对应watcher实例
+
+  /** 
+   * 节点
+   * 值是什么
+   * 和他相关的指令
+   * 
+  */
+  //  所有动态的绑定都需要创建更新函数和对应的watcher实例
+
+  // 所有动态的更新值都需要调用update
   update(node, exp, dir) {
     // textUpdater()
     // 初始化
@@ -163,10 +184,12 @@ class Compile {
 
     // 更新: 
     new Watcher(this.$vm, exp, function (val) {
+      // 此时的val是watcher传给我的
       fn && fn(node, val)
     })
   }
 
+  // 真正实操的函数 start
   textUpdater(node, value) {
     node.textContent = value
   }
@@ -174,8 +197,10 @@ class Compile {
   htmlUpdater(node, value) {
     node.innerHTML = value
   }
+  // 真正实操的函数 end
 
-  // 元素
+
+  // 判断节点是元素
   isElement(node) {
     return node.nodeType === 1
   }
@@ -186,25 +211,32 @@ class Compile {
   }
 
   isDirective(attrName) {
+    // 判断开头是不是以k-开头
     return attrName.indexOf('k-') === 0
   }
 }
 
 
+
 // Watcher: 小秘书，界面中的一个依赖对应一个小秘书
 class Watcher {
-  constructor(vm, key, updateFn) {
-    this.vm = vm
+  /** 
+   * vue实例
+   * 所关联的key是谁
+   * 更新函数
+  */
+  constructor(vm, key, updateFn){
+    this.vm = vm // kvue实例的this
     this.key = key
     this.updateFn = updateFn
 
-    // 读一次数据，触发defineReactive里面的get()
-    Dep.target = this
-    this.vm[this.key]
-    Dep.target = null
-  }
+    // 读一次数据，触发 defineReactive 里面的get
+    // （有一个全局的地方能保存watcher实例）
+    Dep.target = this //在Dep这个类里加一个静态属性(Class 本身的属性，而不是实例的属性)
+    this.vm[this.key] //读一次属性，会出发 get
+    Dep.target = null //事情做完了，再置空
 
-  // 管家调用
+  }
   update() {
     // 传入当前的最新值给更新函数
     this.updateFn.call(this.vm, this.vm[this.key])
@@ -224,3 +256,5 @@ class Dep {
     this.deps.forEach(watcher => watcher.update())
   }
 }
+
+
