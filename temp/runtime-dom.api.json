@@ -1,0 +1,1069 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.9.2",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@vue/runtime-dom!",
+  "docComment": "",
+  "name": "@vue/runtime-dom",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@vue/runtime-dom!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!createApp:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createApp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "CreateAppFunction",
+              "canonicalReference": "@vue/runtime-dom!CreateAppFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Element",
+              "canonicalReference": "!Element:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "createApp",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!createSSRApp:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createSSRApp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "CreateAppFunction",
+              "canonicalReference": "@vue/runtime-dom!CreateAppFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Element",
+              "canonicalReference": "!Element:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "createSSRApp",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!hydrate:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hydrate: "
+            },
+            {
+              "kind": "Reference",
+              "text": "RootHydrateFunction",
+              "canonicalReference": "@vue/runtime-dom!RootHydrateFunction:type"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "hydrate",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!render:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "render: "
+            },
+            {
+              "kind": "Reference",
+              "text": "RootRenderFunction",
+              "canonicalReference": "@vue/runtime-dom!RootRenderFunction:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Element",
+              "canonicalReference": "!Element:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "render",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!Transition:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "Transition: "
+            },
+            {
+              "kind": "Reference",
+              "text": "FunctionalComponent",
+              "canonicalReference": "@vue/runtime-dom!FunctionalComponent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "TransitionProps",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Transition",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!TransitionGroup:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "TransitionGroup: "
+            },
+            {
+              "kind": "Content",
+              "text": "new () => {\n    $props: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TransitionGroupProps",
+              "canonicalReference": "@vue/runtime-dom!TransitionGroupProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TransitionGroup",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@vue/runtime-dom!TransitionGroupProps:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type TransitionGroupProps = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Omit",
+              "canonicalReference": "!Omit:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "TransitionProps",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", 'mode'> & {\n    tag?: string;\n    moveClass?: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TransitionGroupProps",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@vue/runtime-dom!TransitionProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface TransitionProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "BaseTransitionProps",
+              "canonicalReference": "@vue/runtime-dom!BaseTransitionProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Element",
+              "canonicalReference": "!Element:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TransitionProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#appearActiveClass:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "appearActiveClass?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "appearActiveClass",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#appearFromClass:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "appearFromClass?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "appearFromClass",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#appearToClass:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "appearToClass?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "appearToClass",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#css:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "css?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "css",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#duration:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "duration?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | {\n        enter: number;\n        leave: number;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "duration",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#enterActiveClass:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enterActiveClass?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "enterActiveClass",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#enterFromClass:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enterFromClass?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "enterFromClass",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#enterToClass:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enterToClass?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "enterToClass",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#leaveActiveClass:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "leaveActiveClass?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "leaveActiveClass",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#leaveFromClass:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "leaveFromClass?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "leaveFromClass",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#leaveToClass:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "leaveToClass?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "leaveToClass",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#name:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/runtime-dom!TransitionProps#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "typeof "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TRANSITION",
+                  "canonicalReference": "@vue/runtime-dom!~TRANSITION:var"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | typeof "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ANIMATION",
+                  "canonicalReference": "@vue/runtime-dom!~ANIMATION:var"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/runtime-dom!useCssModule:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function useCssModule(name?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, string>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "name",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "useCssModule"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/runtime-dom!useCssVars:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function useCssVars(getter: "
+            },
+            {
+              "kind": "Content",
+              "text": "(ctx: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentPublicInstance",
+              "canonicalReference": "@vue/runtime-dom!ComponentPublicInstance:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, string>"
+            },
+            {
+              "kind": "Content",
+              "text": ", scoped?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "getter",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "scoped",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            }
+          ],
+          "name": "useCssVars"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!vModelCheckbox:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "vModelCheckbox: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelDirective",
+              "canonicalReference": "@vue/runtime-dom!~ModelDirective:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLInputElement",
+              "canonicalReference": "!HTMLInputElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "vModelCheckbox",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!vModelDynamic:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "vModelDynamic: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ObjectDirective",
+              "canonicalReference": "@vue/runtime-dom!ObjectDirective:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLInputElement",
+              "canonicalReference": "!HTMLInputElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLSelectElement",
+              "canonicalReference": "!HTMLSelectElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLTextAreaElement",
+              "canonicalReference": "!HTMLTextAreaElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "vModelDynamic",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!vModelRadio:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "vModelRadio: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelDirective",
+              "canonicalReference": "@vue/runtime-dom!~ModelDirective:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLInputElement",
+              "canonicalReference": "!HTMLInputElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "vModelRadio",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!vModelSelect:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "vModelSelect: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelDirective",
+              "canonicalReference": "@vue/runtime-dom!~ModelDirective:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLSelectElement",
+              "canonicalReference": "!HTMLSelectElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "vModelSelect",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!vModelText:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "vModelText: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelDirective",
+              "canonicalReference": "@vue/runtime-dom!~ModelDirective:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLInputElement",
+              "canonicalReference": "!HTMLInputElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLTextAreaElement",
+              "canonicalReference": "!HTMLTextAreaElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "vModelText",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!vShow:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "vShow: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ObjectDirective",
+              "canonicalReference": "@vue/runtime-dom!ObjectDirective:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "VShowElement",
+              "canonicalReference": "@vue/runtime-dom!~VShowElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "vShow",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!withKeys:var",
+          "docComment": "/**\n * @private\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "withKeys: "
+            },
+            {
+              "kind": "Content",
+              "text": "(fn: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", modifiers: string[]) => (event: "
+            },
+            {
+              "kind": "Reference",
+              "text": "KeyboardEvent",
+              "canonicalReference": "!KeyboardEvent:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => any"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "withKeys",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/runtime-dom!withModifiers:var",
+          "docComment": "/**\n * @private\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "withModifiers: "
+            },
+            {
+              "kind": "Content",
+              "text": "(fn: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", modifiers: string[]) => (event: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Event",
+              "canonicalReference": "!Event:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", ...args: unknown[]) => any"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "withModifiers",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2249 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.9.2",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@vue/shared!",
+  "docComment": "",
+  "name": "@vue/shared",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@vue/shared!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!babelParserDefautPlugins:var",
+          "docComment": "/**\n * List of @babel/parser plugins that are used for template expression transforms and SFC script transforms. By default we enable proposals slated for ES2020. This will need to be updated as the spec moves forward. Full list at https://babeljs.io/docs/en/next/babel-parser#plugins\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "babelParserDefautPlugins: "
+            },
+            {
+              "kind": "Content",
+              "text": "readonly [\"bigInt\", \"optionalChaining\", \"nullishCoalescingOperator\"]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "babelParserDefautPlugins",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!camelize:var",
+          "docComment": "/**\n * @private\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "camelize: "
+            },
+            {
+              "kind": "Content",
+              "text": "(str: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "camelize",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!capitalize:var",
+          "docComment": "/**\n * @private\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "capitalize: "
+            },
+            {
+              "kind": "Content",
+              "text": "(str: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "capitalize",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!def:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "def: "
+            },
+            {
+              "kind": "Content",
+              "text": "(obj: object, key: string | symbol, value: any) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "def",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!EMPTY_ARR:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "EMPTY_ARR: "
+            },
+            {
+              "kind": "Content",
+              "text": "[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "EMPTY_ARR",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!EMPTY_OBJ:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "EMPTY_OBJ: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    readonly [key: string]: any;\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "EMPTY_OBJ",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!escapeHtml:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function escapeHtml(string: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "string",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "escapeHtml"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!escapeHtmlComment:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function escapeHtmlComment(src: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "src",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "escapeHtmlComment"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!extend:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "extend: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    <T, U>(target: T, source: U): T & U;\n    <T_1, U_1, V>(target: T_1, source1: U_1, source2: V): T_1 & U_1 & V;\n    <T_2, U_2, V_1, W>(target: T_2, source1: U_2, source2: V_1, source3: W): T_2 & U_2 & V_1 & W;\n    (target: object, ...sources: any[]): any;\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "extend",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!generateCodeFrame:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function generateCodeFrame(source: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", start?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ", end?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "source",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "start",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "end",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "generateCodeFrame"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!getGlobalThis:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getGlobalThis: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => any"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "getGlobalThis",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!hasChanged:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hasChanged: "
+            },
+            {
+              "kind": "Content",
+              "text": "(value: any, oldValue: any) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "hasChanged",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!hasOwn:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hasOwn: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: object, key: string | symbol) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "key",
+              "canonicalReference": "@vue/shared!~key"
+            },
+            {
+              "kind": "Content",
+              "text": " is never"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "hasOwn",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!hyphenate:var",
+          "docComment": "/**\n * @private\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hyphenate: "
+            },
+            {
+              "kind": "Content",
+              "text": "(str: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "hyphenate",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!invokeArrayFns:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "invokeArrayFns: "
+            },
+            {
+              "kind": "Content",
+              "text": "(fns: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "[], arg?: any) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "invokeArrayFns",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isArray:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isArray: "
+            },
+            {
+              "kind": "Content",
+              "text": "(arg: any) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "arg",
+              "canonicalReference": "@vue/shared!~arg"
+            },
+            {
+              "kind": "Content",
+              "text": " is any[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isArray",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isBooleanAttr:var",
+          "docComment": "/**\n * The full list is needed during SSR to produce the correct initial markup.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isBooleanAttr: "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isBooleanAttr",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isDate:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isDate: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@vue/shared!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isDate",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isFunction:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isFunction: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@vue/shared!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isFunction",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isGloballyWhitelisted:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isGloballyWhitelisted: "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isGloballyWhitelisted",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isHTMLTag:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isHTMLTag: "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isHTMLTag",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isKnownAttr:var",
+          "docComment": "/**\n * Known attributes, this is used for stringification of runtime static nodes so that we don't stringify bindings that cannot be set from HTML. Don't also forget to allow `data-*` and `aria-*`! Generated from https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isKnownAttr: "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isKnownAttr",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isNoUnitNumericStyleProp:var",
+          "docComment": "/**\n * CSS properties that accept plain numbers\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isNoUnitNumericStyleProp: "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isNoUnitNumericStyleProp",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isObject:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isObject: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@vue/shared!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<any, any>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isObject",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isOn:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isOn: "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isOn",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isPlainObject:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isPlainObject: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@vue/shared!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is object"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isPlainObject",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isPromise:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isPromise: "
+            },
+            {
+              "kind": "Content",
+              "text": "<T = any>(val: unknown) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@vue/shared!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isPromise",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isReservedProp:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isReservedProp: "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isReservedProp",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isSpecialBooleanAttr:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isSpecialBooleanAttr: "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isSpecialBooleanAttr",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!isSSRSafeAttrName:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isSSRSafeAttrName(name: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "name",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "isSSRSafeAttrName"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isString:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isString: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@vue/shared!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isString",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isSVGTag:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isSVGTag: "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isSVGTag",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isSymbol:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isSymbol: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@vue/shared!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is symbol"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isSymbol",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!isVoidTag:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "isVoidTag: "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "isVoidTag",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!looseEqual:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function looseEqual(a: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ", b: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "a",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "b",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "looseEqual"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!looseIndexOf:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function looseIndexOf(arr: "
+            },
+            {
+              "kind": "Content",
+              "text": "any[]"
+            },
+            {
+              "kind": "Content",
+              "text": ", val: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "arr",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "val",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "looseIndexOf"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!makeMap:function(1)",
+          "docComment": "/**\n * Make a map and return a function for checking if a key is in that map. IMPORTANT: all calls of this function must be prefixed with \\/\\*#\\_\\_PURE\\_\\_\\*\\/ So that rollup can tree-shake them if necessary.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function makeMap(str: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", expectsLowerCase?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "(key: string) => boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "str",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "expectsLowerCase",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "makeMap"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!mockError:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "mockError: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "mockError",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!mockWarn:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function mockWarn(asError?: "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "asError",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "mockWarn"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!NO:var",
+          "docComment": "/**\n * Always return false.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "NO: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => boolean"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "NO",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!NOOP:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "NOOP: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "NOOP",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!normalizeClass:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function normalizeClass(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "normalizeClass"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@vue/shared!NormalizedStyle:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type NormalizedStyle = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, string | number>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "NormalizedStyle",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!normalizeStyle:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function normalizeStyle(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "NormalizedStyle",
+              "canonicalReference": "@vue/shared!NormalizedStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "normalizeStyle"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!objectToString:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "objectToString: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "objectToString",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!parseStringStyle:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function parseStringStyle(cssText: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "NormalizedStyle",
+              "canonicalReference": "@vue/shared!NormalizedStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "cssText",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "parseStringStyle"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!PatchFlagNames:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "PatchFlagNames: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [x: number]: string;\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PatchFlagNames",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@vue/shared!PatchFlags:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare const enum PatchFlags "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PatchFlags",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.BAIL:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "BAIL = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "-2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "BAIL",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.CLASS:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "CLASS = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "CLASS",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.DYNAMIC_SLOTS:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "DYNAMIC_SLOTS = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1024"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "DYNAMIC_SLOTS",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.FULL_PROPS:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "FULL_PROPS = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "16"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "FULL_PROPS",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.HOISTED:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "HOISTED = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "-1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "HOISTED",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.HYDRATE_EVENTS:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "HYDRATE_EVENTS = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "32"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "HYDRATE_EVENTS",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.KEYED_FRAGMENT:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "KEYED_FRAGMENT = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "128"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "KEYED_FRAGMENT",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.NEED_PATCH:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "NEED_PATCH = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "512"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "NEED_PATCH",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.PROPS:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "PROPS = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "8"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "PROPS",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.STABLE_FRAGMENT:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "STABLE_FRAGMENT = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "64"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "STABLE_FRAGMENT",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.STYLE:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "STYLE = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "4"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "STYLE",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.TEXT:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "TEXT = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "TEXT",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!PatchFlags.UNKEYED_FRAGMENT:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "UNKEYED_FRAGMENT = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "256"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "UNKEYED_FRAGMENT",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!propsToAttrMap:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "propsToAttrMap: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, string | undefined>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "propsToAttrMap",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!remove:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "remove: "
+            },
+            {
+              "kind": "Content",
+              "text": "<T>(arr: T[], el: T) => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "remove",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@vue/shared!ShapeFlags:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare const enum ShapeFlags "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ShapeFlags",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.ARRAY_CHILDREN:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ARRAY_CHILDREN = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "16"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ARRAY_CHILDREN",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.COMPONENT:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "COMPONENT = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "6"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "COMPONENT",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.COMPONENT_KEPT_ALIVE:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "COMPONENT_KEPT_ALIVE = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "512"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "COMPONENT_KEPT_ALIVE",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.COMPONENT_SHOULD_KEEP_ALIVE:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "COMPONENT_SHOULD_KEEP_ALIVE = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "256"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "COMPONENT_SHOULD_KEEP_ALIVE",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.ELEMENT:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ELEMENT = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ELEMENT",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.FUNCTIONAL_COMPONENT:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "FUNCTIONAL_COMPONENT = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "FUNCTIONAL_COMPONENT",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.SLOTS_CHILDREN:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "SLOTS_CHILDREN = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "32"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "SLOTS_CHILDREN",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.STATEFUL_COMPONENT:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "STATEFUL_COMPONENT = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "4"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "STATEFUL_COMPONENT",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.SUSPENSE:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "SUSPENSE = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "128"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "SUSPENSE",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.TELEPORT:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "TELEPORT = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "64"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "TELEPORT",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!ShapeFlags.TEXT_CHILDREN:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "TEXT_CHILDREN = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "8"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "TEXT_CHILDREN",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@vue/shared!SlotFlags:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare const enum SlotFlags "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SlotFlags",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!SlotFlags.DYNAMIC:member",
+              "docComment": "/**\n * Slots that reference scope variables (v-for or an outer slot prop), or has conditional structure (v-if, v-for). The parent will need to force the child to update because the slot does not fully capture its dependencies.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "DYNAMIC = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "2"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "DYNAMIC",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!SlotFlags.FORWARDED:member",
+              "docComment": "/**\n * `<slot/>` being forwarded into a child component. Whether the parent needs to update the child is dependent on what kind of slots the parent itself received. This has to be refined at runtime, when the child's vnode is being created (in `normalizeChildren`)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "FORWARDED = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "3"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "FORWARDED",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/shared!SlotFlags.STABLE:member",
+              "docComment": "/**\n * Stable slots that only reference slot props or context state. The slot can fully capture its own dependencies so when passed down the parent won't need to force the child to update.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "STABLE = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "1"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "STABLE",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/shared!stringifyStyle:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function stringifyStyle(styles: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NormalizedStyle",
+              "canonicalReference": "@vue/shared!NormalizedStyle:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "styles",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "name": "stringifyStyle"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!toDisplayString:var",
+          "docComment": "/**\n * For converting {{ interpolation }} values to displayed strings.  @private\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "toDisplayString: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "toDisplayString",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!toNumber:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "toNumber: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: any) => any"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "toNumber",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!toRawType:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "toRawType: "
+            },
+            {
+              "kind": "Content",
+              "text": "(value: unknown) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "toRawType",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/shared!toTypeString:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "toTypeString: "
+            },
+            {
+              "kind": "Content",
+              "text": "(value: unknown) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "toTypeString",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        }
+      ]
+    }
+  ]
+}

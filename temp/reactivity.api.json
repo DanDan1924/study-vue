@@ -1,0 +1,3489 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.9.2",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@vue/reactivity!",
+  "docComment": "",
+  "name": "@vue/reactivity",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@vue/reactivity!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!computed:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function computed<T>(getter: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComputedGetter",
+              "canonicalReference": "@vue/reactivity!ComputedGetter:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ComputedRef",
+              "canonicalReference": "@vue/reactivity!ComputedRef:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "getter",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "computed"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!computed:function(2)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function computed<T>(options: "
+            },
+            {
+              "kind": "Reference",
+              "text": "WritableComputedOptions",
+              "canonicalReference": "@vue/reactivity!WritableComputedOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "WritableComputedRef",
+              "canonicalReference": "@vue/reactivity!WritableComputedRef:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 2,
+          "parameters": [
+            {
+              "parameterName": "options",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "computed"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@vue/reactivity!ComputedGetter:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ComputedGetter<T> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(ctx?: any) => T"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ComputedGetter",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@vue/reactivity!ComputedRef:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ComputedRef<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "WritableComputedRef",
+              "canonicalReference": "@vue/reactivity!WritableComputedRef:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "ComputedRef",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ComputedRef#value:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "value",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 3,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@vue/reactivity!ComputedSetter:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ComputedSetter<T> = "
+            },
+            {
+              "kind": "Content",
+              "text": "(v: T) => void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ComputedSetter",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!customRef:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function customRef<T>(factory: "
+            },
+            {
+              "kind": "Reference",
+              "text": "CustomRefFactory",
+              "canonicalReference": "@vue/reactivity!CustomRefFactory:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "factory",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "customRef"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@vue/reactivity!DebuggerEvent:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type DebuggerEvent = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    effect: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReactiveEffect",
+              "canonicalReference": "@vue/reactivity!ReactiveEffect:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    target: object;\n    type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TrackOpTypes",
+              "canonicalReference": "@vue/reactivity!TrackOpTypes:enum"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "TriggerOpTypes",
+              "canonicalReference": "@vue/reactivity!TriggerOpTypes:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    key: any;\n} & "
+            },
+            {
+              "kind": "Reference",
+              "text": "DebuggerEventExtraInfo",
+              "canonicalReference": "@vue/reactivity!DebuggerEventExtraInfo:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DebuggerEvent",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@vue/reactivity!DeepReadonly:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type DeepReadonly<T> = "
+            },
+            {
+              "kind": "Content",
+              "text": "T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Builtin",
+              "canonicalReference": "@vue/reactivity!~Builtin:type"
+            },
+            {
+              "kind": "Content",
+              "text": " ? T : T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Map",
+              "canonicalReference": "!Map:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<infer K, infer V> ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadonlyMap",
+              "canonicalReference": "!ReadonlyMap:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<K>, "
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<V>> : T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadonlyMap",
+              "canonicalReference": "!ReadonlyMap:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<infer K, infer V> ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadonlyMap",
+              "canonicalReference": "!ReadonlyMap:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<K>, "
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<V>> : T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "WeakMap",
+              "canonicalReference": "!WeakMap:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<infer K, infer V> ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "WeakMap",
+              "canonicalReference": "!WeakMap:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<K>, "
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<V>> : T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Set",
+              "canonicalReference": "!Set:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<infer U> ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadonlySet",
+              "canonicalReference": "!ReadonlySet:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<U>> : T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadonlySet",
+              "canonicalReference": "!ReadonlySet:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<infer U> ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReadonlySet",
+              "canonicalReference": "!ReadonlySet:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<U>> : T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "WeakSet",
+              "canonicalReference": "!WeakSet:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<infer U> ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "WeakSet",
+              "canonicalReference": "!WeakSet:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<U>> : T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<infer U> ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<U>> : T extends {} ? {\n    readonly [K in keyof T]: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T[K]>;\n} : "
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DeepReadonly",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 56
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!effect:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function effect<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ">(fn: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => T"
+            },
+            {
+              "kind": "Content",
+              "text": ", options?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReactiveEffectOptions",
+              "canonicalReference": "@vue/reactivity!ReactiveEffectOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReactiveEffect",
+              "canonicalReference": "@vue/reactivity!ReactiveEffect:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 9
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "fn",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "options",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "effect"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!enableTracking:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function enableTracking(): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "enableTracking"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!isProxy:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isProxy(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "isProxy"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!isReactive:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isReactive(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "isReactive"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!isReadonly:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isReadonly(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "isReadonly"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!isRef:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isRef<T>(r: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T> | unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "r",
+              "canonicalReference": "@vue/reactivity!~r"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "r",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "isRef"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@vue/reactivity!ITERATE_KEY:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "ITERATE_KEY: "
+            },
+            {
+              "kind": "Content",
+              "text": "unique symbol"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ITERATE_KEY",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!markRaw:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function markRaw<T extends "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ">(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "markRaw"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!pauseTracking:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function pauseTracking(): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "pauseTracking"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!reactive:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function reactive<T extends "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ">(target: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "UnwrapNestedRefs",
+              "canonicalReference": "@vue/reactivity!~UnwrapNestedRefs:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "target",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "reactive"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@vue/reactivity!ReactiveEffect:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ReactiveEffect<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "ReactiveEffect",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffect#_isEffect:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "_isEffect: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "true"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "_isEffect",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffect:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": []
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffect#active:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "active: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "active",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffect#deps:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "deps: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Array",
+                  "canonicalReference": "!Array:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Dep",
+                  "canonicalReference": "@vue/reactivity!~Dep:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "deps",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffect#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffect#options:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReactiveEffectOptions",
+                  "canonicalReference": "@vue/reactivity!ReactiveEffectOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "options",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffect#raw:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "raw: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "raw",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@vue/reactivity!ReactiveEffectOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ReactiveEffectOptions "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ReactiveEffectOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffectOptions#lazy:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "lazy?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "lazy",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffectOptions#onStop:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onStop?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onStop",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffectOptions#onTrack:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onTrack?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DebuggerEvent",
+                  "canonicalReference": "@vue/reactivity!DebuggerEvent:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onTrack",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffectOptions#onTrigger:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "onTrigger?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(event: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DebuggerEvent",
+                  "canonicalReference": "@vue/reactivity!DebuggerEvent:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onTrigger",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!ReactiveEffectOptions#scheduler:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "scheduler?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(job: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReactiveEffect",
+                  "canonicalReference": "@vue/reactivity!ReactiveEffect:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "scheduler",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@vue/reactivity!ReactiveFlags:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare const enum ReactiveFlags "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ReactiveFlags",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!ReactiveFlags.IS_REACTIVE:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "IS_REACTIVE = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"__v_isReactive\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "IS_REACTIVE",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!ReactiveFlags.IS_READONLY:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "IS_READONLY = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"__v_isReadonly\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "IS_READONLY",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!ReactiveFlags.RAW:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "RAW = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"__v_raw\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "RAW",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!ReactiveFlags.REACTIVE:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "REACTIVE = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"__v_reactive\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "REACTIVE",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!ReactiveFlags.READONLY:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "READONLY = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"__v_readonly\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "READONLY",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!ReactiveFlags.SKIP:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "SKIP = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"__v_skip\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "SKIP",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!readonly:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function readonly<T extends "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ">(target: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "DeepReadonly",
+              "canonicalReference": "@vue/reactivity!DeepReadonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "UnwrapNestedRefs",
+              "canonicalReference": "@vue/reactivity!~UnwrapNestedRefs:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 9
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "target",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "readonly"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!ref:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function ref<T extends "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ">(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " ? T : "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "UnwrapRef",
+              "canonicalReference": "@vue/reactivity!UnwrapRef:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 12
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "ref"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!ref:function(2)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function ref<T>(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "UnwrapRef",
+              "canonicalReference": "@vue/reactivity!UnwrapRef:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 2,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "ref"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!ref:function(3)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function ref<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ">(): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T | undefined>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 3,
+          "parameters": [],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "ref"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@vue/reactivity!Ref:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface Ref<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "Ref",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!Ref#[RefSymbol]:member",
+              "docComment": "/**\n * Type differentiator only. We need this to be in public d.ts but don't want it to show up in IDE autocomplete, so we use a private Symbol instead.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "["
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RefSymbol",
+                  "canonicalReference": "@vue/reactivity!~RefSymbol"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "true"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "[RefSymbol]",
+              "propertyTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!Ref#value:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "value",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@vue/reactivity!RefUnwrapBailTypes:interface",
+          "docComment": "/**\n * This is a special exported interface for other packages to declare additional types that should bail out for ref unwrapping. For example \\@vue/runtime-dom can declare it like so in its d.ts:\n * ```ts\n * declare module '@vue/reactivity' {\n *   export interface RefUnwrapBailTypes {\n *     runtimeDOMBailTypes: Node | Window\n *   }\n * }\n * ```\n *\n * Note that api-extractor somehow refuses to include `declare module` augmentations in its generated d.ts, so we have to manually append them to the final generated d.ts in our build process.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface RefUnwrapBailTypes "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RefUnwrapBailTypes",
+          "members": [],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!resetTracking:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function resetTracking(): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "resetTracking"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!shallowReactive:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function shallowReactive<T extends "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ">(target: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "target",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "shallowReactive"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!shallowReadonly:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function shallowReadonly<T extends "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ">(target: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    [K in keyof T]: "
+            },
+            {
+              "kind": "Reference",
+              "text": "UnwrapNestedRefs",
+              "canonicalReference": "@vue/reactivity!~UnwrapNestedRefs:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T[K]>;\n}>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 9
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "target",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "shallowReadonly"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!shallowRef:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function shallowRef<T>(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " ? T : "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "shallowRef"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!shallowRef:function(2)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function shallowRef<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ">(): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T | undefined>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 2,
+          "parameters": [],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "shallowRef"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!stop_2:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function stop(effect: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ReactiveEffect",
+              "canonicalReference": "@vue/reactivity!ReactiveEffect:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "effect",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "stop_2"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!toRaw:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function toRaw<T>(observed: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "observed",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "toRaw"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!toRef:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function toRef<T extends "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ", K extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof T"
+            },
+            {
+              "kind": "Content",
+              "text": ">(object: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": ", key: "
+            },
+            {
+              "kind": "Content",
+              "text": "K"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T[K]>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 11
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "object",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "key",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "K",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "toRef"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!toRefs:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function toRefs<T extends "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ">(object: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ToRefs",
+              "canonicalReference": "@vue/reactivity!ToRefs:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "object",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "toRefs"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@vue/reactivity!ToRefs:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ToRefs<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [K in keyof T]: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T[K]>;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ToRefs",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!track:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function track(target: "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ", type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TrackOpTypes",
+              "canonicalReference": "@vue/reactivity!TrackOpTypes:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ", key: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "target",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "type",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "key",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "track"
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@vue/reactivity!TrackOpTypes:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare const enum TrackOpTypes "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TrackOpTypes",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!TrackOpTypes.GET:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "GET = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"get\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "GET",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!TrackOpTypes.HAS:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "HAS = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"has\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "HAS",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!TrackOpTypes.ITERATE:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ITERATE = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"iterate\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ITERATE",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!trigger:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function trigger(target: "
+            },
+            {
+              "kind": "Content",
+              "text": "object"
+            },
+            {
+              "kind": "Content",
+              "text": ", type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TriggerOpTypes",
+              "canonicalReference": "@vue/reactivity!TriggerOpTypes:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ", key?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", newValue?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", oldValue?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", oldTarget?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Map",
+              "canonicalReference": "!Map:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<unknown, unknown> | "
+            },
+            {
+              "kind": "Reference",
+              "text": "Set",
+              "canonicalReference": "!Set:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<unknown>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 16,
+            "endIndex": 17
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "target",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "type",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "key",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "newValue",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            },
+            {
+              "parameterName": "oldValue",
+              "parameterTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              }
+            },
+            {
+              "parameterName": "oldTarget",
+              "parameterTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 15
+              }
+            }
+          ],
+          "name": "trigger"
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "@vue/reactivity!TriggerOpTypes:enum",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare const enum TriggerOpTypes "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TriggerOpTypes",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!TriggerOpTypes.ADD:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ADD = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"add\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ADD",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!TriggerOpTypes.CLEAR:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "CLEAR = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"clear\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "CLEAR",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!TriggerOpTypes.DELETE:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "DELETE = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"delete\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "DELETE",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "@vue/reactivity!TriggerOpTypes.SET:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "SET = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"set\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "SET",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!triggerRef:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function triggerRef(ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "ref",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "triggerRef"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@vue/reactivity!unref:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function unref<T>(ref: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<infer V> ? V : T"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "ref",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "unref"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@vue/reactivity!UnwrapRef:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type UnwrapRef<T> = "
+            },
+            {
+              "kind": "Content",
+              "text": "T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<infer V> ? "
+            },
+            {
+              "kind": "Reference",
+              "text": "UnwrapRefSimple",
+              "canonicalReference": "@vue/reactivity!~UnwrapRefSimple:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<V> : "
+            },
+            {
+              "kind": "Reference",
+              "text": "UnwrapRefSimple",
+              "canonicalReference": "@vue/reactivity!~UnwrapRefSimple:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "UnwrapRef",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@vue/reactivity!WritableComputedOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface WritableComputedOptions<T> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "WritableComputedOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!WritableComputedOptions#get:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ComputedGetter",
+                  "canonicalReference": "@vue/reactivity!ComputedGetter:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "get",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!WritableComputedOptions#set:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "set: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ComputedSetter",
+                  "canonicalReference": "@vue/reactivity!ComputedSetter:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "set",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@vue/reactivity!WritableComputedRef:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface WritableComputedRef<T> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Ref",
+              "canonicalReference": "@vue/reactivity!Ref:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "WritableComputedRef",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@vue/reactivity!WritableComputedRef#effect:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly effect: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReactiveEffect",
+                  "canonicalReference": "@vue/reactivity!ReactiveEffect:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "effect",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

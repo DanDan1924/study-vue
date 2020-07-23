@@ -1,0 +1,23 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-07-23 10:18:09
+ * @LastEditTime: 2020-07-23 11:03:40
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /study-vue/packages/vue/examples/05.html
+--> 
+<div id="app"></div>
+
+<script src="04.js"></script>
+<script>
+  // 做响应式数据
+  const data = reactive({foo: 'foo'})
+
+  effect(() => {
+    app.innerText = data.foo
+  })
+
+  setTimeout(() => {
+    data.foo = 'fooooooooooooooo'
+  }, 1000);
+</script>
